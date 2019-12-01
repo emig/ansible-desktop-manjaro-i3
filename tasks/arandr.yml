@@ -1,0 +1,4 @@
+---
+- name: arandr
+  pacman: name="arandr" state="present"
+  become: yes

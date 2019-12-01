@@ -1,5 +1,0 @@
----
-- name: "Install Oracle NetBeans"
-  pacman: name="netbeans" state="present"
-  become: yes
-

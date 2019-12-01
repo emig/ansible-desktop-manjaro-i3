@@ -1,5 +1,5 @@
 ---
-- name: Install DNS Utilities
+- name: Install bat 
   #pacman: name="dnsutils" state="present"
-  pacman: name="bind-tools" state="present"
+  pacman: name="bat" state="present"
   become: yes

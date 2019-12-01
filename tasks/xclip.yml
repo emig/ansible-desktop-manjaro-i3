@@ -1,0 +1,5 @@
+
+---
+- name: xclip
+  pacman: name="xclip" state="present"
+  become: yes

@@ -1,0 +1,4 @@
+---
+- name: neovim
+  pacman: name="neovim" state="present"
+  become: yes

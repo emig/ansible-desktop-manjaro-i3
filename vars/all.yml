@@ -1,6 +1,6 @@
 ---
-primary_non_root_user: andy
+primary_non_root_user: emig
 
 users_inc_super:
-  - andy
+  - emig
   - root

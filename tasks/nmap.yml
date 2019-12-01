@@ -1,4 +1,4 @@
 ---
-- name: Oracle Java Development Kit
+- name: Nmap
   pacman: name="nmap" state="present"
   become: yes

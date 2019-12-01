@@ -21,20 +21,23 @@
     #######################
     # Basic configuration #
     #######################
-    - include: tasks/xorg.yml
-    - include: tasks/conky.yml
-    - include: tasks/disable-automute.yml
-    - include: tasks/enable-numlock.yml
-    - include: tasks/fonts-terminal.yml
-    - include: tasks/fonts-desktop.yml
-    - include: tasks/oracle-java.yml
+    # - include: tasks/conky.yml
+      #    - include: tasks/disable-automute.yml
+      #- include: tasks/enable-numlock.yml
+      #- include: tasks/fonts-terminal.yml
+      #   - include: tasks/fonts-desktop.yml
     - include: tasks/dnsutils.yml
     - include: tasks/nmap.yml
+    - include: tasks/taskwarrior.yml
+    - include: tasks/arandr.yml
+    - include: tasks/neovim.yml
+    - include: tasks/bat.yml
+    - include: tasks/xclip.yml
 
-    - include: tasks/vim.yml user={{ user_item }}
-      with_items: '{{ users_inc_super }}'
-      loop_control:
-        loop_var: user_item
+      #- include: tasks/vim.yml user={{ user_item }}
+      #with_items: '{{ users_inc_super }}'
+      #loop_control:
+      #  loop_var: user_item
 
     ########################
     #       SOFTWARE       #
@@ -42,49 +45,14 @@
 
     # Internet
     # --------
-    - include: tasks/google-chrome.yml
     - include: tasks/firefox.yml
-    # telegram-desktop | telegram-desktop-bin
-    - include: tasks/telegram-desktop-bin.yml
-    - include: tasks/slack-desktop.yml
-    - include: tasks/transmission.yml
-    - include: tasks/pidgin.yml
-    - include: tasks/filezilla.yml
-    # Broken in the AUR (PGP sig errors)
-    #- include: tasks/tor-browser.yml
-    - include: tasks/qtox.yml
 
-    # Collaboration
-    # -------------
-    - include: tasks/nvpy.yml
 
     # Sound & Video
     # -------------
-    - include: tasks/mplayer.yml
-    - include: tasks/clementine.yml
-    - include: tasks/cmus.yml
-    - include: tasks/spotify.yml
+    #- include: tasks/cmus.yml
 
     # Office
     # ------
-    - include: tasks/libreoffice.yml
-    - include: tasks/gnucash.yml
     - include: tasks/freemind.yml
-    - include: tasks/workrave.yml
-
-    # Programming
-    # -----------
-    - include: tasks/netbeans.yml
-    - include: tasks/geany.yml
-    - include: tasks/mariadb.yml
-    - include: tasks/mysql-workbench.yml
-    
-    # Rackspace Cloud Tools
-    # ---------------------
-    # https://aur.archlinux.org/packages/supernova/
-    - include: tasks/supernova.yml
-    # 
-    # Virtualisation
-    # --------------
-    - include: tasks/qemu.yml
 

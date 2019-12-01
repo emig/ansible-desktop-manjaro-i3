@@ -1,0 +1,4 @@
+---
+- name: xrandr
+  pacman: name="xrandr" state="present"
+  become: yes

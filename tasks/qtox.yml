@@ -1,4 +1,0 @@
----
-- name: Install qtox
-  pacman: name="qtox" state="present"
-  become: yes

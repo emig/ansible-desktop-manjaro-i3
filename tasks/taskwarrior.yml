@@ -1,0 +1,4 @@
+---
+- name: Taskwarrior
+  pacman: name="task" state="present"
+  become: yes

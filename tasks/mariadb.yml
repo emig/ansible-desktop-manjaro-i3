@@ -1,5 +1,0 @@
----
-- name: "Install Maria DB"
-  pacman: name="mariadb" state="present"
-  become: yes
-

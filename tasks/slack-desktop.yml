@@ -1,7 +1,0 @@
----
-# https://aur.archlinux.org/packages/slack-desktop/
-- name: "Install Slack Desktop"
-  yaourt: name="slack-desktop" state="present"
-  become: yes
-  become_user: "{{ primary_non_root_user }}"
-
